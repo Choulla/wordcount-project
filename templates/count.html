@@ -1,0 +1,11 @@
+<h1>Count Analyse :D</h1>
+<a href="{% url 'home' %}">Count Again !</a>
+<h4>{{ fulltext }}</h4>
+
+<h5>The Number Of Letter is ==>> {{ fulltextlen }}</h5>
+<h1>Count Statistic :D</h1>
+
+{% for k,v in sortedword %}
+	{{ k }} ==>> {{ v }} 
+	<br/>
+{% endfor %}

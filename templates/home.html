@@ -1,0 +1,9 @@
+<h1>WELCOME TO | WORD COUTER :D</h1>
+<h2>My name is {{ myname }}</h2>
+
+<form action="{% url 'count' %}">
+	<textarea cols="40" rows="10" name="fulltext"></textarea> <br />
+	<input type="submit" value="count !" />
+</form>
+
+<a href="{% url 'about' %}">About !</a>
